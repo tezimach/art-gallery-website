@@ -1,0 +1,392 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.map {
+  width: 100%;
+  margin-top: -75px;
+  object-fit: contain;
+}
+
+.map_tablet {
+  display: none;
+}
+
+.map_desktop {
+  display: none;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  top: 0;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 1);
+  justify-self: start;
+  margin-bottom: 48px;
+  margin-top: 48px;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 32px;
+  margin-bottom: 56px;
+  color: hsla(0, 0%, 100%, 1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  all: unset;
+}
+
+.location {
+  background-color: hsla(0, 0%, 8%, 1);
+  color: hsla(0, 0%, 100%, 1);
+  padding: 28px 35px 23px 32px;
+  align-self: flex-start;
+  font-family: "Big Shoulders Display", cursive;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 3.63636px;
+  margin-left: -4px;
+}
+
+.arrow {
+  background-color: hsla(24, 56%, 63%, 1);
+  padding: 24px;
+}
+
+.black_box_location {
+  flex-basis: 100%;
+  background-color: hsla(0, 0%, 8%, 1);
+  padding-bottom: 25px;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: hsla(24, 56%, 63%, 1);
+}
+
+.street {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.footer {
+  background: hsla(24, 56%, 63%, 1);
+  padding-left: 32px;
+  padding-right: 32px;
+  width:100%;
+}
+
+.footer img{
+  margin-top: 48px;
+  margin-bottom: 38px;
+}
+
+.footer p{
+  color: hsla(0, 0%, 8%, 1);
+  margin-bottom: 38px;
+}
+
+i{
+  margin-right: 20px;
+  margin-bottom: 48px;
+}
+
+@media only screen and (min-width: 753px) {
+  
+ .map {
+     display: none;
+}
+
+.map_tablet {
+  display: block;
+   width: 100%;
+  margin-top: -75px;
+  object-fit: contain;
+} 
+  
+  .sticky {
+    margin-left: 5%;
+  }
+  
+  .black_box_location {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+ .black_box_location h1{
+ font-size: 55px;
+line-height: 50px;
+   flex-basis: 33.33%;
+   margin-top: 88px;
+}
+  .king_street_box {
+    flex-basis: 66.66%;
+    padding-top: 88px;
+  }
+ .footer {
+  padding-left: 5%;
+  padding-right: 5%;
+   padding-top: 56px;
+   padding-bottom: 56px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+} 
+  .footer img{
+    flex-basis: 25%;
+    margin-top: 0px;
+}
+
+.footer p{
+  flex-basis: 50%;
+  margin: 0px;
+}
+
+  .logos {
+    display: flex;
+    justify-content: space-between;
+    flex-basis:12%;
+  }
+  
+i{
+  margin: 0px;
+}
+}
+
+@media only screen and (min-width: 1423px) {
+  
+ .map_tablet {
+     display: none;
+}
+
+.map_desktop {
+  display: block;
+   width: 100%;
+  margin-top: -75px;
+  object-fit: contain;
+} 
+  
+  .sticky {
+    margin-left: 10.8%;
+  }
+  
+  .black_box_location {
+    padding-bottom: 128px;
+    padding-left: 10.8%;
+    padding-right: 10.8%;
+  }
+ .black_box_location h1{
+ font-size: 70px;
+line-height: 70px;
+   flex-basis: 30%;
+   margin-top: 104px;
+}
+  .king_street_box {
+    flex-basis: 50%;
+    padding-top: 104px;
+  }
+ .footer {
+  padding-left: 10.8%;
+  padding-right: 10.8%;
+   padding-top: 80px;
+   padding-bottom: 80px;
+} 
+  .footer img{
+    flex-basis: 25%;
+    margin-top: 0px;
+}
+
+.footer p{
+  flex-basis: 40%;
+  margin: 0px;
+}
+
+  .logos {
+    display: flex;
+    justify-content: space-between;
+    flex-basis:12%;
+  }
+  
+i{
+  margin: 0px;
+}
+  
+  .sticky:hover .arrow {
+    background-color: hsla(0, 0%, 8%, 1);
+  } 
+  .sticky:hover .location {
+    background-color: hsla(24, 56%, 63%, 1);
+  } 
+  
+  .fb:hover {
+    color: hsla(0, 0%, 100%, 1);
+  }
+  
+  .insta:hover {
+    color: hsla(0, 0%, 100%, 1);
+  }
+  
+  .twitt:hover {
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
